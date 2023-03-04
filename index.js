@@ -3,7 +3,6 @@ const query_string = require('querystring')
 const multiplication = require('./multiplication')
 
 const demo_server = http.createServer(function(request, response) {
-  console.log('hi')
   console.dir(request.param)
   if (request.method == 'POST') {
     console.log('POST')
